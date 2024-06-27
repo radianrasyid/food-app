@@ -25,7 +25,7 @@ struct SwiftUI_AppetizerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppetizerTabView()
         }
         .modelContainer(sharedModelContainer)
     }
