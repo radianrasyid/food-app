@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppetizerModel: Codable{
+struct AppetizerModel: Codable, Identifiable {
     let id: Int
     let name: String
     let description: String
@@ -20,4 +20,23 @@ struct AppetizerModel: Codable{
 
 struct AppetizerResponse: Codable {
     let request: [AppetizerModel]
+}
+
+struct MockData {
+    static let sampleAppetizer = AppetizerModel(
+        id: 0001,
+        name: "Test appetizer",
+        description: "This is the description for my appetizer. It's yummy",
+        price: 9.99,
+        imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
+        calories: 9,
+        protein: 9,
+        carbs: 9
+    )
+    
+    static let appetizers = [
+        sampleAppetizer,
+        sampleAppetizer,
+        sampleAppetizer,
+    ]
 }

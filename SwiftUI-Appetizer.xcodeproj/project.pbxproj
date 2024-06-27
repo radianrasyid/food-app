@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */; };
 		F7E8B23A2C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */; };
 		F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B23B2C2D422B00E6DD1B /* AppetizerTabView.swift */; };
 		F7E8B23E2C2D422B00E6DD1B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B23D2C2D422B00E6DD1B /* Item.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		F7E8B2362C2D422A00E6DD1B /* SwiftUI-Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Appetizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizerApp.swift; sourceTree = "<group>"; };
 		F7E8B23B2C2D422B00E6DD1B /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7C5E7C42C2DDBE800CBC773 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		F7E8B22D2C2D422A00E6DD1B = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		F7E8B2382C2D422A00E6DD1B /* SwiftUI-Appetizer */ = {
 			isa = PBXGroup;
 			children = (
+				F7C5E7C42C2DDBE800CBC773 /* Component */,
 				F7E8B2722C2D5F2D00E6DD1B /* Model */,
 				F7E8B2652C2D432300E6DD1B /* Screens */,
 				F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */,
@@ -289,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E8B2742C2D5FDA00E6DD1B /* AppetizerModel.swift in Sources */,
+				F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */,
 				F7E8B26F2C2D436A00E6DD1B /* AppetizerAccountView.swift in Sources */,
 				F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */,
 				F7E8B2712C2D437300E6DD1B /* AppetizerOrderView.swift in Sources */,

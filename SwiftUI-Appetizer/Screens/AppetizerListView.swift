@@ -10,8 +10,14 @@ import SwiftUI
 struct AppetizerListView: View {
     var body: some View {
         NavigationStack{
-            Text("Appetizer list view")
-                .navigationTitle("🍟 Appetizers")
+            List(MockData.appetizers){
+                appetizer in
+                FoodListCell(appetizer: appetizer)
+                .onTapGesture {
+                    print("asu")
+                }
+            }
+            .navigationTitle("🍟 Appetizers")
         }
     }
 }
