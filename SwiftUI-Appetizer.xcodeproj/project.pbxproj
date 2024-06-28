@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72782832C2E5DA50074F136 /* NetworkManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72782822C2E5DA50074F136 /* NetworkManagerService.swift */; };
+		F72782852C2E606B0074F136 /* AppetizerErrorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72782842C2E606B0074F136 /* AppetizerErrorsModel.swift */; };
+		F72782882C2E6DA60074F136 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72782872C2E6DA60074F136 /* AppetizerListViewModel.swift */; };
+		F727828A2C2E718A0074F136 /* AppetizerAlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72782892C2E718A0074F136 /* AppetizerAlertContext.swift */; };
 		F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */; };
 		F7E8B23A2C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */; };
 		F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B23B2C2D422B00E6DD1B /* AppetizerTabView.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F72782822C2E5DA50074F136 /* NetworkManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerService.swift; sourceTree = "<group>"; };
+		F72782842C2E606B0074F136 /* AppetizerErrorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerErrorsModel.swift; sourceTree = "<group>"; };
+		F72782872C2E6DA60074F136 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		F72782892C2E718A0074F136 /* AppetizerAlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerAlertContext.swift; sourceTree = "<group>"; };
 		F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		F7E8B2362C2D422A00E6DD1B /* SwiftUI-Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Appetizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizerApp.swift; sourceTree = "<group>"; };
@@ -83,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F72782812C2E5D9B0074F136 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F72782822C2E5DA50074F136 /* NetworkManagerService.swift */,
+				F72782892C2E718A0074F136 /* AppetizerAlertContext.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F72782862C2E6D940074F136 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F72782872C2E6DA60074F136 /* AppetizerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F7C5E7C42C2DDBE800CBC773 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +139,7 @@
 		F7E8B2382C2D422A00E6DD1B /* SwiftUI-Appetizer */ = {
 			isa = PBXGroup;
 			children = (
+				F72782812C2E5D9B0074F136 /* Service */,
 				F7C5E7C42C2DDBE800CBC773 /* Component */,
 				F7E8B2722C2D5F2D00E6DD1B /* Model */,
 				F7E8B2652C2D432300E6DD1B /* Screens */,
@@ -154,6 +180,7 @@
 		F7E8B2652C2D432300E6DD1B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F72782862C2E6D940074F136 /* ViewModel */,
 				F7E8B26C2C2D436300E6DD1B /* AppetizerListView.swift */,
 				F7E8B26E2C2D436A00E6DD1B /* AppetizerAccountView.swift */,
 				F7E8B2702C2D437300E6DD1B /* AppetizerOrderView.swift */,
@@ -165,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				F7E8B2732C2D5FDA00E6DD1B /* AppetizerModel.swift */,
+				F72782842C2E606B0074F136 /* AppetizerErrorsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,11 +329,15 @@
 			files = (
 				F7E8B2742C2D5FDA00E6DD1B /* AppetizerModel.swift in Sources */,
 				F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */,
+				F727828A2C2E718A0074F136 /* AppetizerAlertContext.swift in Sources */,
+				F72782882C2E6DA60074F136 /* AppetizerListViewModel.swift in Sources */,
 				F7E8B26F2C2D436A00E6DD1B /* AppetizerAccountView.swift in Sources */,
 				F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */,
 				F7E8B2712C2D437300E6DD1B /* AppetizerOrderView.swift in Sources */,
 				F7E8B26D2C2D436300E6DD1B /* AppetizerListView.swift in Sources */,
 				F7E8B23E2C2D422B00E6DD1B /* Item.swift in Sources */,
+				F72782852C2E606B0074F136 /* AppetizerErrorsModel.swift in Sources */,
+				F72782832C2E5DA50074F136 /* NetworkManagerService.swift in Sources */,
 				F7E8B23A2C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
