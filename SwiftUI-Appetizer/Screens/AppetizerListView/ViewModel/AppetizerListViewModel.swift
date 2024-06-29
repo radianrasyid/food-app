@@ -13,6 +13,9 @@ import Foundation
     @Published var alertItem: AlertItemCustomize?
     @Published var isError: Bool = false
     @Published var isAppetizerLoading: Bool = true
+    @Published var isShowingDetail: Bool = false
+    var selectedAppetizer: AppetizerModel?
+    
     
     func getAppetizers(){
         isAppetizerLoading = true
