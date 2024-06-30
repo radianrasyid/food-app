@@ -24,6 +24,7 @@ struct AppetizerListView: View {
                         appetizer in
                         FoodListCell(appetizer:
                                 appetizer)
+                        .disabled(vm.isShowingDetail)
                         .onTapGesture {
                             withAnimation{
                                 vm.selectedAppetizer = appetizer
@@ -58,8 +59,4 @@ struct AppetizerListView: View {
         }
     }
     
-}
-
-#Preview {
-    AppetizerListView()
 }

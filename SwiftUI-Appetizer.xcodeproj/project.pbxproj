@@ -14,7 +14,11 @@
 		F7392F832C2FE7F2005FFDA3 /* AppetizerOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7392F822C2FE7F2005FFDA3 /* AppetizerOrderButton.swift */; };
 		F7982D2D2C2F1D2C00A65C70 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7982D2C2C2F1D2C00A65C70 /* RemoteImage.swift */; };
 		F7982D302C2F296A00A65C70 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7982D2F2C2F296A00A65C70 /* AppetizerDetailView.swift */; };
+		F7BD5A7D2C311E05003AF0C9 /* AppetizerAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD5A7C2C311E05003AF0C9 /* AppetizerAccountViewModel.swift */; };
+		F7BD5A812C312036003AF0C9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD5A802C312036003AF0C9 /* String+Ext.swift */; };
+		F7BD5A832C3144C8003AF0C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BD5A822C3144C8003AF0C9 /* User.swift */; };
 		F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */; };
+		F7DF4B802C31A3B2003266D1 /* AppetizerOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF4B7F2C31A3B2003266D1 /* AppetizerOrderViewModel.swift */; };
 		F7E8B23A2C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */; };
 		F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B23B2C2D422B00E6DD1B /* AppetizerTabView.swift */; };
 		F7E8B23E2C2D422B00E6DD1B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8B23D2C2D422B00E6DD1B /* Item.swift */; };
@@ -54,7 +58,11 @@
 		F7392F822C2FE7F2005FFDA3 /* AppetizerOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerOrderButton.swift; sourceTree = "<group>"; };
 		F7982D2C2C2F1D2C00A65C70 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		F7982D2F2C2F296A00A65C70 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		F7BD5A7C2C311E05003AF0C9 /* AppetizerAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerAccountViewModel.swift; sourceTree = "<group>"; };
+		F7BD5A802C312036003AF0C9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F7BD5A822C3144C8003AF0C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F7C5E7C52C2DDBF800CBC773 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
+		F7DF4B7F2C31A3B2003266D1 /* AppetizerOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerOrderViewModel.swift; sourceTree = "<group>"; };
 		F7E8B2362C2D422A00E6DD1B /* SwiftUI-Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Appetizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E8B2392C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizerApp.swift; sourceTree = "<group>"; };
 		F7E8B23B2C2D422B00E6DD1B /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -124,6 +132,48 @@
 			path = AppetizerListView;
 			sourceTree = "<group>";
 		};
+		F7BD5A792C311DD8003AF0C9 /* AppetizerAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				F7BD5A7B2C311DFA003AF0C9 /* ViewModel */,
+				F7E8B26E2C2D436A00E6DD1B /* AppetizerAccountView.swift */,
+			);
+			path = AppetizerAccountView;
+			sourceTree = "<group>";
+		};
+		F7BD5A7A2C311DE0003AF0C9 /* AppetizerOrderView */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF4B7E2C31A3A6003266D1 /* ViewModel */,
+				F7E8B2702C2D437300E6DD1B /* AppetizerOrderView.swift */,
+			);
+			path = AppetizerOrderView;
+			sourceTree = "<group>";
+		};
+		F7BD5A7B2C311DFA003AF0C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7BD5A7C2C311E05003AF0C9 /* AppetizerAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7BD5A7E2C31201B003AF0C9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F7BD5A7F2C312023003AF0C9 /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F7BD5A7F2C312023003AF0C9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7BD5A802C312036003AF0C9 /* String+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F7C5E7C42C2DDBE800CBC773 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +182,14 @@
 				F7392F822C2FE7F2005FFDA3 /* AppetizerOrderButton.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		F7DF4B7E2C31A3A6003266D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF4B7F2C31A3B2003266D1 /* AppetizerOrderViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F7E8B22D2C2D422A00E6DD1B = {
@@ -157,6 +215,7 @@
 		F7E8B2382C2D422A00E6DD1B /* SwiftUI-Appetizer */ = {
 			isa = PBXGroup;
 			children = (
+				F7BD5A7E2C31201B003AF0C9 /* Utilities */,
 				F72782812C2E5D9B0074F136 /* Service */,
 				F7C5E7C42C2DDBE800CBC773 /* Component */,
 				F7E8B2722C2D5F2D00E6DD1B /* Model */,
@@ -198,9 +257,9 @@
 		F7E8B2652C2D432300E6DD1B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F7BD5A7A2C311DE0003AF0C9 /* AppetizerOrderView */,
+				F7BD5A792C311DD8003AF0C9 /* AppetizerAccountView */,
 				F7982D2E2C2F294000A65C70 /* AppetizerListView */,
-				F7E8B26E2C2D436A00E6DD1B /* AppetizerAccountView.swift */,
-				F7E8B2702C2D437300E6DD1B /* AppetizerOrderView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -210,6 +269,7 @@
 			children = (
 				F7E8B2732C2D5FDA00E6DD1B /* AppetizerModel.swift */,
 				F72782842C2E606B0074F136 /* AppetizerErrorsModel.swift */,
+				F7BD5A822C3144C8003AF0C9 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,15 +407,19 @@
 				F7E8B2742C2D5FDA00E6DD1B /* AppetizerModel.swift in Sources */,
 				F7C5E7C62C2DDBF800CBC773 /* FoodListCell.swift in Sources */,
 				F727828A2C2E718A0074F136 /* AppetizerAlertContext.swift in Sources */,
+				F7BD5A812C312036003AF0C9 /* String+Ext.swift in Sources */,
 				F72782882C2E6DA60074F136 /* AppetizerListViewModel.swift in Sources */,
 				F7E8B26F2C2D436A00E6DD1B /* AppetizerAccountView.swift in Sources */,
 				F7E8B23C2C2D422B00E6DD1B /* AppetizerTabView.swift in Sources */,
 				F7982D2D2C2F1D2C00A65C70 /* RemoteImage.swift in Sources */,
+				F7DF4B802C31A3B2003266D1 /* AppetizerOrderViewModel.swift in Sources */,
+				F7BD5A7D2C311E05003AF0C9 /* AppetizerAccountViewModel.swift in Sources */,
 				F7E8B2712C2D437300E6DD1B /* AppetizerOrderView.swift in Sources */,
 				F7982D302C2F296A00A65C70 /* AppetizerDetailView.swift in Sources */,
 				F7E8B26D2C2D436300E6DD1B /* AppetizerListView.swift in Sources */,
 				F7E8B23E2C2D422B00E6DD1B /* Item.swift in Sources */,
 				F7392F832C2FE7F2005FFDA3 /* AppetizerOrderButton.swift in Sources */,
+				F7BD5A832C3144C8003AF0C9 /* User.swift in Sources */,
 				F72782852C2E606B0074F136 /* AppetizerErrorsModel.swift in Sources */,
 				F72782832C2E5DA50074F136 /* NetworkManagerService.swift in Sources */,
 				F7E8B23A2C2D422A00E6DD1B /* SwiftUI_AppetizerApp.swift in Sources */,

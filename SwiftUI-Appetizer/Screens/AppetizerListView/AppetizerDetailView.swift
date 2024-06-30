@@ -21,7 +21,7 @@ struct AppetizerDetailView: View {
             Button{
                 print("tapped")
             }label: {
-                AppetizerOrderButton(appetizer: appetizer)
+                AppetizerOrderButton(price: appetizer.price)
             }
             .padding(.bottom, 30)
         }
@@ -46,10 +46,6 @@ struct AppetizerDetailView: View {
             }
         }, alignment: .topTrailing)
     }
-}
-
-#Preview {
-    AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowed: .constant(false))
 }
 
 struct NutritionInformation: View {

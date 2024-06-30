@@ -18,19 +18,19 @@ struct AppetizerTabView: View {
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
-                }
+                }.tag(1)
             
             AppetizerAccountView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Account")
-                }
+                }.tag(2)
             
             AppetizerOrderView()
                 .tabItem {
                     Image(systemName: "bag")
                     Text("Order")
-                }
+                }.tag(3)
         }
         .tint(Color("BrandPrimary"))
         

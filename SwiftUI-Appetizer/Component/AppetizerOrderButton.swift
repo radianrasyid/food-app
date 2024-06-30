@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 struct AppetizerOrderButton: View {
-    let appetizer: AppetizerModel
+    let price: Double
     var body: some View {
-        Text("$ \(appetizer.price, specifier: "%.2f") - Add to Cart")
+        Text("$ \(price, specifier: "%.2f") - Add to Cart")
             .font(.title3)
             .fontWeight(.semibold)
             .frame(width: 260, height: 50)
